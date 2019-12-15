@@ -1,0 +1,51 @@
+.header {
+  background-color: $color-grey-light-1;
+  grid-column: full-start / col-end 4;
+
+  display: grid;
+  grid-template-rows: 35rem min-content (1rem);
+  grid-template-columns: minmax(min-content, max-content);
+  grid-row-gap: 7rem;
+  justify-content: center;
+  @media only screen and (max-width: 767px) {
+    position: sticky;
+    display: none;
+  }
+  &__img {
+    max-width: 90%;
+  }
+  img {
+    border: 0;
+    max-width: 100%;
+    vertical-align: middle;
+    display: grid;
+  }
+  &__text {
+    font-size: 16px;
+    line-height: 24px;
+    color: $color-secondary;
+  }
+  &__btn-text {
+    text-decoration: none;
+    color: $color-secondary;
+  }
+  &__btn-text:link,
+  &__btn-text:visited {
+    font-size: 1.6rem;
+    display: grid;
+    text-decoration: none;
+  }
+
+  &__btn-text:hover,
+  &__btn-text:active {
+    text-decoration: underline;
+  }
+
+  .row {
+    flex: 1;
+    width: 100%;
+    position: sticky;
+    top: 40px;
+    height: 600px;
+  }
+}

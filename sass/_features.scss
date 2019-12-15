@@ -1,0 +1,117 @@
+.features {
+  background-color: $color-grey-light-1;
+  grid-column: col-start 5 / full-end;
+
+  display: grid;
+
+  grid-gap: 2.5rem;
+  @media only screen and (max-width: 767px) {
+    display: none;
+  }
+  &__img--1 {
+    max-width: 100%;
+    display: inline-block;
+  }
+  &__img--2 {
+    max-width: 100%;
+    display: inline-block;
+    content: "";
+  }
+
+  &__img--3 {
+    max-width: 100%;
+    display: inline-block;
+  }
+  &__img--4 {
+    max-width: 100%;
+    display: inline-block;
+    content: "";
+  }
+  &__text-1 {
+    font-size: 16px;
+    line-height: 24px;
+    display: inline-block;
+    color: $color-secondary;
+    margin-top: 2rem;
+  }
+
+  &__btn-text-1 {
+    text-decoration: none;
+    color: $color-secondary;
+    display: grid;
+    grid-column: 1 / -2;
+    grid-row: 10 / 9;
+  }
+
+  &__btn-text-1:link,
+  &__btn-text-1:visited {
+    font-size: 1.6rem;
+    display: grid;
+    text-decoration: none;
+  }
+
+  &__btn-text-1:hover,
+  &__btn-text-1:active {
+    text-decoration: underline;
+  }
+
+  &__btn-text-2 {
+    text-decoration: none;
+    color: $color-secondary;
+    display: grid;
+    grid-column: 1 / -1;
+    grid-row: 10 / 9;
+  }
+
+  &__btn-text-2:link,
+  &__btn-text-2:visited {
+    font-size: 1.6rem;
+    display: grid;
+    text-decoration: none;
+  }
+
+  &__btn-text-2:hover,
+  &__btn-text-2:active {
+    text-decoration: underline;
+  }
+
+  &__btn-text-3 {
+    text-decoration: none;
+    color: $color-secondary;
+    display: grid;
+    grid-column: 1 / -2;
+    grid-row: 4 / 4;
+  }
+
+  &__btn-text-3:link,
+  &__btn-text-3:visited {
+    font-size: 1.6rem;
+
+    text-decoration: none;
+  }
+
+  &__btn-text-3:hover,
+  &__btn-text-3:active {
+    text-decoration: underline;
+  }
+
+  &__btn-text-4 {
+    text-decoration: none;
+    color: $color-secondary;
+    display: grid;
+    grid-column: 1 / -1;
+    grid-row: auto;
+  }
+
+  &__btn-text-4:link,
+  &__btn-text-4:visited {
+    font-size: 1.6rem;
+    display: grid;
+    text-decoration: none;
+  }
+
+  &__btn-text-4:hover,
+  &__btn-text-4:active {
+    text-decoration: underline;
+  }
+}

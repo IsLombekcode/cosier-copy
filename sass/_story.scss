@@ -1,0 +1,78 @@
+.story {
+  background-color: $color-grey-light-1;
+
+  grid-column: full-start / col-end 9;
+
+  display: gird;
+  grid-template-columns: auto auto auto;
+
+  padding: 10px;
+  font-size: 10px;
+
+  .box {
+    padding: 20px;
+    text-align: center;
+    width: 33%;
+    display: inline-block;
+
+    @media only screen and (max-width: 767px) {
+      width: 100%;
+    }
+  }
+
+  .small {
+    display: none;
+    @media only screen and (max-width: 767px) {
+      display: inline-block;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    // box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.096);
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 24px;
+    display: inline-block;
+    color: $color-secondary;
+    height: 100px;
+  }
+
+  &__btn-text {
+    text-decoration: none;
+    color: $color-secondary;
+    display: inline-block;
+  }
+
+  &__btn-text:link,
+  &__btn-text:visited {
+    font-size: 1.6rem;
+    display: block;
+    text-decoration: none;
+  }
+
+  &__btn-text:hover,
+  &__btn-text:active {
+    text-decoration: underline;
+  }
+
+  &__btn-text-1 {
+    text-decoration: none;
+    color: $color-secondary;
+    display: inline-block;
+    padding: 20px;
+  }
+  &__btn-text-1:link,
+  &__btn-text-1:visited {
+    font-size: 1.6rem;
+    display: block;
+  }
+
+  &__btn-text-1:hover,
+  &__btn-text-1:active {
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,78 @@
+.panel {
+// display: block;
+
+  &__box {
+    position: fixed;
+    left: auto;
+    top: 0;
+    right: 0;
+    bottom: auto;
+    z-index: 1000;
+    overflow: scroll;
+    width: 320px;
+    height: 100%;
+    padding-top: 22px;
+    padding-right: 40px;
+    padding-left: 40px;
+    background-color: $color-secondary;
+    opacity: 1;
+    transform: translateX(320px);
+  }
+  &__checkbox {
+    display: none;
+  }
+
+
+
+  .panel__button-text {
+    font-family: "Founders Grotesk", Arial, sans-serif;
+    color: $color-grey-light-1;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+  }
+
+  &__text {
+    font-family: Domaine, Georgia, sans-serif;
+    color: $color-grey-light-1;
+    font-size: 33px;
+    line-height: 33px;
+    font-weight: 500;
+    text-align: left;
+  }
+
+  &__btn-text {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    background-color: transparent;
+    font-size: 14px;
+    line-height: 20px;
+    color: $color-grey-light-1;
+  }
+
+  &__btn-text:active {
+    position: absolute;
+    background: $color-grey-light-1;
+    display: none;
+    min-width: 100%;
+  }
+
+  div .panel__btn-text {
+    display: none;
+ 
+  }
+
+  #i1:checked ~ div#index1 a,
+  #i2:checked ~ div#index2 a, 
+  #i3:checked ~ div#index3 a,
+  #i4:checked ~ div#index4 a,
+  #i5:checked ~ div#index5 a,
+  #i6:checked ~ div#index6 a {
+    display: inline-block;
+  }
+
+  input.panel__text {
+    display: none;
+  }
+}
