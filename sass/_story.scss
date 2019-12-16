@@ -24,6 +24,9 @@
     display: none;
     @media only screen and (max-width: 767px) {
       display: inline-block;
+      padding-top: 0px;
+      margin-bottom: 5px;
+
     }
   }
 
