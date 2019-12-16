@@ -37,3 +37,18 @@ h2 {
   line-height: 53px;
   font-weight: 500;
 }
+
+
+.heading-3 {
+  display: block;
+  color: $color-grey-light-1;
+  font-size: 58px;
+  line-height: 64px;
+  font-weight: 500;
+  letter-spacing: 0;
+  padding: 20px;
+
+  @media only screen and (max-width: 767px) {
+     display: none;
+  }
+}

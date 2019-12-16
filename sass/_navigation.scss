@@ -16,7 +16,7 @@
   &__nav li {
     display: inline-block;
     // float: right;
-    @media only screen and (max-width: 469px) {
+    @media only screen and (max-width: 769px) {
       display: none;
     }
   }
