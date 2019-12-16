@@ -1,5 +1,5 @@
 .panel {
-// display: block;
+  // display: block;
 
   &__box {
     position: fixed;
@@ -16,13 +16,17 @@
     padding-left: 40px;
     background-color: $color-secondary;
     opacity: 1;
-    transform: translateX(320px);
   }
   &__checkbox {
     display: none;
   }
 
-
+  #p1 ~ .panel__box {
+    transform: translateX(320px);
+  }
+  #p1:checked ~ .panel__box {
+    transform: translateX(0px);
+  }
 
   .panel__button-text {
     font-family: "Founders Grotesk", Arial, sans-serif;
@@ -60,11 +64,10 @@
 
   div .panel__btn-text {
     display: none;
- 
   }
 
   #i1:checked ~ div#index1 a,
-  #i2:checked ~ div#index2 a, 
+  #i2:checked ~ div#index2 a,
   #i3:checked ~ div#index3 a,
   #i4:checked ~ div#index4 a,
   #i5:checked ~ div#index5 a,

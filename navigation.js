@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     close.addEventListener("click", () => { closed() });
     const open = () => {
         panel.style.transform = "translateX(0px)";
+        panel.style.color = ("white");
     }
     const closed = () => {
         panel.style.transform = "translateX(320px)";
